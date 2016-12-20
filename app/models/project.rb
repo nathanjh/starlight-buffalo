@@ -3,4 +3,5 @@ class Project < ApplicationRecord
 
   has_many :chapters
   has_many :images
+  has_many :posts
 end
