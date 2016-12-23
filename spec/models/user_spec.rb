@@ -55,7 +55,7 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe 'User associations' do
+  describe 'associations' do
     it 'has projects' do
       expect(user.projects).to eq []
 
