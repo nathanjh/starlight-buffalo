@@ -46,7 +46,7 @@ RSpec.describe Post, type: :model do
 
   describe 'associations' do
     it 'has comments' do
-      new_comments = Array.new(4) { build(:comment) }
+      new_comments = Array.new(4) { build(:post_comment) }
       new_comments.each { |comment| post.comments << comment }
 
       expect(post.comments.length).to eq new_comments.length

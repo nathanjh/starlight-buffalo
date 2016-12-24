@@ -64,7 +64,7 @@ RSpec.describe Image, type: :model do
 
   describe 'associations' do
     it 'has comments' do
-      new_comments = Array.new(4) { build(:comment) }
+      new_comments = Array.new(4) { build(:image_comment) }
       new_comments.each { |comment| image.comments << comment }
 
       expect(image.comments.length).to eq new_comments.length
