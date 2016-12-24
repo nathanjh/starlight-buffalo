@@ -10,7 +10,7 @@ RSpec.describe Image, type: :model do
   let(:title) { image.title }
   let(:url) { image.image_url }
 
-  context 'when image instance is valid' do
+  context 'when Image instance is valid' do
     it 'has a title' do
       expect(image.title).to eq title
     end
@@ -38,7 +38,7 @@ RSpec.describe Image, type: :model do
     end
   end
 
-  context 'when image instance is invalid' do
+  context 'when Image instance is invalid' do
     it 'is invalid' do
       img = Image.new
       expect(img).not_to be_valid

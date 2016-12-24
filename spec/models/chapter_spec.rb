@@ -8,13 +8,13 @@ RSpec.describe Chapter, type: :model do
   let(:chapter1) { create(:chapter) }
   let(:title) { chapter1.title }
 
-  context 'when chapter instance is valid' do
+  context 'when Chapter instance is valid' do
     it 'has a title' do
       expect(chapter1.title).to eq title
     end
   end
 
-  context 'when chapter instance is invalid' do
+  context 'when Chapter instance is invalid' do
     it 'is invalid' do
       inv_chapter = Chapter.new
       expect(inv_chapter.valid?).to be false

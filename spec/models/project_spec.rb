@@ -9,7 +9,7 @@ RSpec.describe Project, type: :model do
   let(:title) { project1.title }
   let(:description) { project1.description }
 
-  context 'when project instance is valid' do
+  context 'when Project instance is valid' do
     it 'has a title' do
       expect(project1.title).to eq title
     end
@@ -19,7 +19,7 @@ RSpec.describe Project, type: :model do
     end
   end
 
-  context 'when project instance is invalid' do
+  context 'when Project instance is invalid' do
     it 'is invalid' do
       inv_project = Project.new
       expect(inv_project.save).to be false
