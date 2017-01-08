@@ -37,7 +37,7 @@ RSpec.describe ProjectsController, type: :controller do
     end
   end
 
-  # test for admin filter access on all non-index routes
+  # TODO: test for admin filter access on all non-index routes
   describe 'GET #new' do
     it 'assigns a new project as @project' do
       get :new
