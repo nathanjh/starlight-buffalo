@@ -5,5 +5,10 @@ FactoryGirl.define do
     # to prevent duplicate emails
     email { Faker::Internet.free_email + rand(9999).to_s }
     password 'password'
+    password_confirmation 'password'
+
+    factory :admin do
+      admin true
+    end
   end
 end
