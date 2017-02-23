@@ -47,6 +47,10 @@ RSpec.describe UsersController, type: :controller do
   end
 
   describe 'user access' do
+    before :each do
+      user_session create(:user)
+    end
+
     it_behaves_like 'public access to users'
 
     describe 'GET #edit' do

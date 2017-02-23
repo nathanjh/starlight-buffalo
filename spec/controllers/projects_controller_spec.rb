@@ -80,8 +80,7 @@ RSpec.describe ProjectsController, type: :controller do
 
   describe 'admin access' do
     before :each do
-      user = create(:admin)
-      session[:user_id] = user.id
+      user_session create(:admin)
     end
 
     it_behaves_like 'public access to projects'
